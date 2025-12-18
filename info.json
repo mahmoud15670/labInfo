@@ -12,5 +12,12 @@
     "cond": "fasting required for 6-8 hours",
     "tubecolor": "gray",
     "container": "Fluoride Tube"
+  },
+  "ppbs": {
+    "testname": "ppbs",
+    "description": "Postprandial Blood Sugar",
+    "cond": "2 hours after meal",
+    "tubecolor": "gray",
+    "container": "Fluoride Tube"
   }
 }
