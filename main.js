@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("info.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        if (data[inputValue.toLowerCase()]) {
+          console.log("Test found:", data[inputValue.toLowerCase()]);
+        }
       });
   });
 
