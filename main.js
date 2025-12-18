@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function selectSuggestion(testKey) {
     testNameInput.value = testKey;
     suggestions.innerHTML = "";
+    searchButton.click();
+    testNameInput.value = "";
   }
   window.selectSuggestion = selectSuggestion;
 
