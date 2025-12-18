@@ -9,11 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const testNameInput = document.getElementById("query");
 
   testNameInput.addEventListener("input", function () {
-    if (testNameInput.value.trim() === "") {
-      labInfoDiv.style.display = "none";
-    } else {
-      labInfoDiv.style.display = "block";
-    }
+    const inputValue = testNameInput.value.trim();
+    fetch("info.json")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      });
   });
 
   searchButton.addEventListener("click", function () {
