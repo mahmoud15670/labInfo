@@ -20,11 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
             inputValue !== "" &&
             inputValue.length >= 2
           ) {
-            suggestions.innerHTML += `<li class="list-group-item">${key}</li>`;
+            suggestions.innerHTML = "";
+            suggestions.innerHTML += `<li class="list-group-item" id="${key}" onclick="selectSuggestion('${key}')">${key}</li>`;
           }
         }
       });
   });
+
+  function selectSuggestion(testKey) {
+    testNameInput.value = testKey;
+    suggestions.innerHTML = "";
+  }
 
   searchButton.addEventListener("click", function () {
     const testNameValue = testNameInput.value.trim().toLowerCase();
