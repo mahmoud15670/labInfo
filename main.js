@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             key.toLowerCase().includes(inputValue.toLowerCase()) &&
             inputValue !== ""
           ) {
-            suggestions.innerHTML += `<li class="list-group-item" id="${key}" onclick="selectSuggestion('${key}')">${key}</li>`;
+            suggestions.innerHTML += `<li class="list-group-item" id="${key}" onclick="suggestions.innerHTML = ''">${key}</li>`;
           }
         }
       });
