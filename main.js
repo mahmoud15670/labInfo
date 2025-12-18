@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => response.json())
       .then((data) => {
         if (data[inputValue.toLowerCase()]) {
-          console.log("Test found:", data[inputValue.toLowerCase()]);
+          console.log(
+            "Test found:",
+            data[inputValue.toLowerCase()]["testname"]
+          );
         }
       });
   });
