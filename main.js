@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const tubeColor = document.getElementById("tubecolor");
   const container = document.getElementById("container");
   const testNameInput = document.getElementById("query");
+  const suggestions = document.getElementById("suggestions");
 
   testNameInput.addEventListener("input", function () {
     const inputValue = testNameInput.value.trim();
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             key.toLowerCase().includes(inputValue.toLowerCase()) &&
             inputValue !== ""
           ) {
+            suggestions.innerHTML += `<li class="list-group-item">${key}</li>`;
           }
         }
       });
