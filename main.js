@@ -6,11 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const condition = document.getElementById("condition");
   const tubeColor = document.getElementById("tubecolor");
   const container = document.getElementById("container");
+  const testNameInput = document.getElementById("query");
   searchButton.addEventListener("click", function () {
-    const testNameInput = document
-      .getElementById("query")
-      .value.trim()
-      .toLowerCase();
+    testNameInput.value.trim().toLowerCase();
     fetch("info.json")
       .then((response) => response.json())
       .then((data) => {
