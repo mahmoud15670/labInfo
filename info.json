@@ -2,6 +2,8 @@
   "cbc": {
     "testname": "cbc",
     "description": "Complete Blood Count",
-    "cond": false
+    "cond": false,
+    "tubecolor": "lavender",
+    "container": "EDTA Tube"
   }
 }

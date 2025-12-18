@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const searchButton = document.getElementById("search");
   const labInfoDiv = document.getElementById("lab-info");
+  const testName = document.getElementById("testname");
+  const description = document.getElementById("description");
+  const condition = document.getElementById("condition");
+  const tubeColor = document.getElementById("tubecolor");
+  const container = document.getElementById("container");
   searchButton.addEventListener("click", function () {
     const testNameInput = document
       .getElementById("query")
@@ -12,9 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if (data[testNameInput]) {
           const testInfo = data[testNameInput];
 
-          const testDiv = document.createElement("div");
-          testDiv.innerHTML = `<h2>${testInfo.testname}</h2><p>${testInfo.description}</p>`;
-          labInfoDiv.appendChild(testDiv);
+          if (testInfo.cond === false) {
+            testInfo.cond = "N/A";
+          }
+          testName.textContent = testInfo.testname;
+          description.textContent = testInfo.description;
+          condition.textContent = testInfo.cond;
+          tubeColor.textContent = testInfo.tubecolor;
+          container.textContent = testInfo.container;
         } else {
           alert("Test not found.");
         }
