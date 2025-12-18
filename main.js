@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const testNameInput = document.getElementById("query");
   const suggestions = document.getElementById("suggestions");
 
+  function selectSuggestion(testKey) {
+    testNameInput.value = testKey;
+    suggestions.innerHTML = "";
+  }
+  window.selectSuggestion = selectSuggestion;
+
   testNameInput.addEventListener("input", function () {
     const inputValue = testNameInput.value.trim();
     fetch("info.json")
@@ -25,11 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
   });
-
-  function selectSuggestion(testKey) {
-    testNameInput.value = testKey;
-    suggestions.innerHTML = "";
-  }
 
   searchButton.addEventListener("click", function () {
     const testNameValue = testNameInput.value.trim().toLowerCase();
