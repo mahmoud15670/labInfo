@@ -13,7 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("info.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        for (const key in data) {
+          if (
+            key.toLowerCase().includes(inputValue.toLowerCase()) &&
+            inputValue !== ""
+          ) {
+          }
+        }
       });
   });
 
