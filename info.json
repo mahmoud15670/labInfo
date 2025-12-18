@@ -19,5 +19,110 @@
     "cond": "2 hours after meal",
     "tubecolor": "gray",
     "container": "Fluoride Tube"
+  },
+  "rbs": {
+    "testname": "rbs",
+    "description": "Random Blood Sugar",
+    "cond": false,
+    "tubecolor": "gray",
+    "container": "Fluoride Tube"
+  },
+  "chol": {
+    "testname": "cholesterol",
+    "description": "Lipid Profile - Cholesterol",
+    "cond": "fasting required for 9-12 hours",
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "tg": {
+    "testname": "triglycerides",
+    "description": "Lipid Profile - Triglycerides",
+    "cond": "fasting required for 9-12 hours",
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "hdl": {
+    "testname": "hdl",
+    "description": "Lipid Profile - HDL Cholesterol",
+    "cond": "fasting required for 9-12 hours",
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "ldl": {
+    "testname": "ldl",
+    "description": "Lipid Profile - LDL Cholesterol",
+    "cond": "fasting required for 9-12 hours",
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "vldl": {
+    "testname": "vldl",
+    "description": "Lipid Profile - VLDL Cholesterol",
+    "cond": "fasting required for 9-12 hours",
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "sgpt": {
+    "testname": "sgpt",
+    "description": "Liver Function Test - SGPT (ALT)",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "sgot": {
+    "testname": "sgot",
+    "description": "Liver Function Test - SGOT (AST)",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "alp": {
+    "testname": "alp",
+    "description": "Liver Function Test - Alkaline Phosphatase",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "tbil": {
+    "testname": "total_bilirubin",
+    "description": "Liver Function Test - Total Bilirubin",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "dbil": {
+    "testname": "direct_bilirubin",
+    "description": "Liver Function Test - Direct Bilirubin",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "creatinine": {
+    "testname": "creatinine",
+    "description": "Kidney Function Test - Creatinine",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "urea": {
+    "testname": "urea",
+    "description": "Kidney Function Test - Urea",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "uric_acid": {
+    "testname": "uric_acid",
+    "description": "Kidney Function Test - Uric Acid",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
+  },
+  "alb": {
+    "testname": "albumin",
+    "description": "Kidney Function Test - Albumin",
+    "cond": false,
+    "tubecolor": "red",
+    "container": "Serum Tube"
   }
 }
