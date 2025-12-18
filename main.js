@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (testInfo.cond === false) {
             testInfo.cond = "N/A";
           }
-          testName.textContent = testInfo.testname;
+          testName.textContent = testInfo.testname.toUpperCase();
           description.textContent = testInfo.description;
           condition.textContent = testInfo.cond;
           tubeColor.textContent = testInfo.tubecolor;
