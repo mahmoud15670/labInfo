@@ -14,23 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("info.json")
       .then((response) => response.json())
       .then((data) => {
+        suggestions.innerHTML = "";
         for (const key in data) {
           if (
             key.toLowerCase().includes(inputValue.toLowerCase()) &&
-            inputValue !== "" &&
-            inputValue.length >= 2
+            inputValue !== ""
           ) {
-            suggestions.innerHTML = "";
             suggestions.innerHTML += `<li class="list-group-item" id="${key}" onclick="selectSuggestion('${key}')">${key}</li>`;
           }
         }
       });
   });
-
-  function selectSuggestion(testKey) {
-    testNameInput.value = testKey;
-    suggestions.innerHTML = "";
-  }
 
   searchButton.addEventListener("click", function () {
     const testNameValue = testNameInput.value.trim().toLowerCase();
