@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         for (const key in data) {
           if (
             key.toLowerCase().includes(inputValue.toLowerCase()) &&
-            inputValue !== ""
+            inputValue !== "" &&
+            inputValue.length >= 2
           ) {
             suggestions.innerHTML += `<li class="list-group-item">${key}</li>`;
           }
