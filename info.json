@@ -5,5 +5,12 @@
     "cond": false,
     "tubecolor": "lavender",
     "container": "EDTA Tube"
+  },
+  "fbs": {
+    "testname": "fbs",
+    "description": "Fasting Blood Sugar",
+    "cond": "fasting required for 6-8 hours",
+    "tubecolor": "gray",
+    "container": "Fluoride Tube"
   }
 }
