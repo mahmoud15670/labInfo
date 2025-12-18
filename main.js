@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   searchButton.addEventListener("click", function () {
     const testNameValue = testNameInput.value.trim().toLowerCase();
+    suggestions.innerHTML = "";
+    testNameInput.value = "";
     fetch("info.json")
       .then((response) => response.json())
       .then((data) => {
