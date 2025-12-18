@@ -14,28 +14,32 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <h1>Lab Information</h1>
-    <input type="search" id="query" class="form-control" />
-    <button id="search" class="btn btn-primary">search</button>
-    <table id="results" class="table">
-      <thead>
-        <tr>
-          <th>Test Name</th>
-          <th>Description</th>
-          <th>Condition</th>
-          <th>Container</th>
-          <th>tube color</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td id="testname"></td>
-          <td id="description"></td>
-          <td id="condition"></td>
-          <td id="container"></td>
-          <td id="tubecolor"></td>
-        </tr>
-      </tbody>
-    </table>
+    <h1 class="text-center">Lab Information</h1>
+    <div class="container">
+      <input type="search" id="query" class="form-control" />
+      <button id="search" class="btn btn-primary m-3">search</button>
+    </div>
+    <div class="container">
+      <table id="results" class="table">
+        <thead>
+          <tr>
+            <th>Test Name</th>
+            <th>Description</th>
+            <th>Condition</th>
+            <th>Container</th>
+            <th>tube color</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="testname"></td>
+            <td id="description"></td>
+            <td id="condition"></td>
+            <td id="container"></td>
+            <td id="tubecolor"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
