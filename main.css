@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  padding: 20px;
+}
+
+#lab-info {
+  display: none;
+}

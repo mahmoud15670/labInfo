@@ -11,17 +11,21 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="main.css" />
     <script src="main.js"></script>
   </head>
   <body>
     <h1 class="text-center">Lab Information</h1>
     <div class="container">
-      <input type="search" id="query" class="form-control" />
+      <input type="search" id="query" class="form-control" maxlength="10" />
       <button id="search" class="btn btn-primary m-3">search</button>
       <ul id="suggestions" class="list-group"></ul>
     </div>
     <div id="lab-info" class="container">
-      <table id="results" class="table">
+      <table
+        id="results"
+        class="table table-bordered table-dark text-center mt-4"
+      >
         <thead>
           <tr>
             <th>Test Name</th>

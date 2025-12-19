@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   testNameInput.addEventListener("input", function () {
     const inputValue = testNameInput.value.trim();
+    labInfoDiv.style.display = "none";
     fetch("info.json")
       .then((response) => response.json())
       .then((data) => {
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
           condition.textContent = testInfo.cond;
           tubeColor.textContent = testInfo.tubecolor;
           container.textContent = testInfo.container;
+          labInfoDiv.style.display = "block";
         } else {
           alert("Test not found.");
         }
